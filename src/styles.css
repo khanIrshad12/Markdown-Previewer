@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", sans-serif;
+}
+body {
+  background-color: rgb(120, 219, 219);
+  font-size: 24px;
+}
+.main {
+  display: grid;
+  margin-top: 40px;
+  grid-gap: 15px;
+  grid-template-columns: 1fr;
+}
+#editor,
+#preview {
+  background-color: rgb(181, 225, 228);
+  padding: 15px;
+  border-radius: 5px;
+}
+#preview {
+  min-height: 300px;
+  padding-left: 30px;
+}
+img {
+  border-radius: 50%;
+}
+pre,
+code {
+  background-color: #ffffff;
+}
+pre {
+  padding: 10px;
+}
+@media (min-width: 992px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
